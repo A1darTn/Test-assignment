@@ -19,9 +19,9 @@
 - Docker & Docker Compose
 - drf-yasg (Swagger документация)
 
-##Быстрый старт
+## Быстрый старт
 
-###Запуск с Docker Compose
+### Запуск с Docker Compose
 
 1. **Клонируйте репозиторий:**
 ```bash
@@ -44,23 +44,23 @@ docker-compose exec web python manage.py createsuperuser
 - Swagger документация: http://localhost:8000/swagger/
 - Админка Django: http://localhost:8000/admin/
 
-##Примеры запросов
+## Примеры запросов
 
-###Создание исполнителя
+### Создание исполнителя
 
 ```bash
 curl -X POST "http://localhost:8000/api/artists/" \
   -H "Content-Type: application/json" \
   -d '{"name": "The Beatles"}'
 ```
-###Создание альбома
+### Создание альбома
 
 ```bash
 curl -X POST "http://localhost:8000/api/albums/" \
   -H "Content-Type: application/json" \
   -d '{"title": "Abbey Road", "artist": 1, "release_year": 1969}'
 ```
-###Создание песни и добавление в альбом
+### Создание песни и добавление в альбом
 
 ```bash
 # Сначала создаем песню
