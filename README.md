@@ -40,9 +40,9 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 ```
 5. **Откройте в браузере:**
-API: http://localhost:8000/api/
-Swagger документация: http://localhost:8000/swagger/
-Админка Django: http://localhost:8000/admin/
+- API: http://localhost:8000/api/
+- Swagger документация: http://localhost:8000/swagger/
+- Админка Django: http://localhost:8000/admin/
 
 ##Примеры запросов
 
